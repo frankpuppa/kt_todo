@@ -1,1 +1,2 @@
-rootProject.name = "com.example.ktor-sample"
+rootProject.name = "com.todo.test"
+
