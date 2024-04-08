@@ -115,9 +115,6 @@ class TaskRepository(val db_conn: java.sql.Connection) {
             )
         st.setInt(1, u_id)
         val result = st.executeQuery()
-        if (result.next() == false) {
-            return emptyList()
-        }
         val tasks = mutableListOf<Task>()
         while (result.next()) {
             tasks.add(
